@@ -14,7 +14,8 @@ body {
 
 .inicio {
     font-family: Arial, sans-serif;
-    height: 14vh;
+    min-height: 14dvh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -48,8 +49,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #003c91
-    
+    color: #1d48ce;
+    max-width: 40dvh;
+    width: auto;
 }
 
 .pesq input {
@@ -77,10 +79,12 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 72vh;
+    justify-content: space-evenly;
+    min-height: 71dvh;
+    height: auto;
     padding: 40px 20px;
 }
+
 
 .coluna {
     
@@ -97,13 +101,19 @@ body {
     display: block;
     margin-bottom: 10px;
     font-size: 14px;
-    color: #043b77c7;
+    color: #1d48ce;
     text-align: center;
+    
+}
+
+.cabecalho h2 {
+    text-decoration: none;
+    color: #1d48ce;
 }
 
 .informacoes {
     font-family: Arial, sans-serif;
-    background-color: #013ba7;
+    background-color: #5176d1;
     border: none;
     color: white;
     padding: 10px;
@@ -116,7 +126,7 @@ body {
 
 .informacoes:hover {
     transform: scale(1.05);
-    background-color: #003c91;
+    background-color: #1d48ce;
 }
 
 .informacoes h3 {
@@ -127,7 +137,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    min-height: 14dvh;
+    height: auto;
     padding: 15px;
 }
 
