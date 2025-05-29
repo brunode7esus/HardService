@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-    
+
     background-image: linear-gradient(to right, rgb(218, 227, 245) 16.62%, #5c95ff 200%);
     display: flex;
     flex-direction: column;
@@ -34,9 +33,13 @@ body {
     height: 100%;
 }
 
-.logo img
-{
+.logo img {
     width: 80px;
+}
+
+.logo-sdx img {
+    width: 60px;
+    margin-bottom: 0;
 }
 
 .nome img {
@@ -85,15 +88,38 @@ body {
     padding: 40px 20px;
 }
 
+.iframe-css {
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    flex: 1 1 80%;
+}
+
+.iframe-css iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
 .coluna {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 15%;
     display: block;
-    
+
+}
+
+.coluna-dash {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vh;
+
 }
 
 .cabecalho {
@@ -103,7 +129,7 @@ body {
     font-size: 14px;
     color: #1d48ce;
     text-align: center;
-    
+
 }
 
 .cabecalho h2 {
@@ -125,6 +151,26 @@ body {
 }
 
 .informacoes:hover {
+    transform: scale(1.05);
+    background-color: #1d48ce;
+}
+
+.informacoes-dash {
+    font-family: Arial, sans-serif;
+    background-color: #5176d1;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 15dvh;
+    width: 30dvh;
+}
+
+.informacoes-dash:hover {
     transform: scale(1.05);
     background-color: #1d48ce;
 }
@@ -156,8 +202,8 @@ footer {
 
 @media screen and (max-width: 800px) {
 
-  .coluna {
-        
+    .coluna {
+
         display: flex;
         width: 95%;
         margin-bottom: 20px;
@@ -171,13 +217,13 @@ footer {
         align-items: center;
     }
 
-    .cabecalho{
+    .cabecalho {
 
         display: flex;
         justify-content: left;
         border: none;
         background-color: none;
-        text-decoration: underline  #ffffff;
+        text-decoration: underline #ffffff;
         background: none;
         color: #ffffff;
         font-size: 22px;
