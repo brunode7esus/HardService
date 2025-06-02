@@ -155,6 +155,23 @@ body {
     background-color: #1d48ce;
 }
 
+.voltar {
+    font-family: Arial, sans-serif;
+    background-color: none;
+    border: none;
+    color: #1d48ce;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.voltar:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
 .informacoes-dash {
     font-family: Arial, sans-serif;
     background-color: #5176d1;
